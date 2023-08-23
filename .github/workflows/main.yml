@@ -4,5 +4,5 @@ uses: checkmarx/ast-github-action@main #Github Action version
 with:
   base_uri: https://ast.checkmarx.net/
   cx_tenant: sonype-01
-  cx_client_id: ${{ secrets.CX_CLIENT_ID }}
-  cx_client_secret: ${{ secrets.CX_CLIENT_SECRET }}
+  cx_client_id: ${{38e2b1340dba2a78a09}}
+  cx_client_secret: ${{b34d3fd0950a9efbff9b0f0483ea9eef60aeb8d8}}
