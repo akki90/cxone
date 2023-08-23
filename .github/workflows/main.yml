@@ -18,8 +18,8 @@ jobs:
     # Provide the Tenant for AST portal URL
           cx_tenant: sonype-01
     # Client ID for AST portal authentication
-          cx_client_id: ${{secrets.38e2b1340dba2a78a09}}
+          cx_client_id: ${{secrets.cx_client_id}}
     # Secret key for AST portal authentication
-          cx_client_secret: ${{secrets.b34d3fd0950a9efbff9b0f0483ea9eef60aeb8d8}}
+          cx_client_secret: ${{secrets.cx_client_secret}}
     # Select a Checkmarx Project Name
    
