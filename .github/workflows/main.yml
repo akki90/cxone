@@ -1,28 +1,25 @@
 name: Checkmarx oneScan
   # You may pin to the exact commit or the version.
   # uses: Checkmarx/ast-github-action@f9e0e85a6c0a37f3e716007203c9db7fe17356d4
-on:
-  push:
-    braches:
-      -main
+on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
     
-      -name: Checkout
-      uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v2
 
-      -name: Checkmarx AST Github Action
-      uses: Checkmarx/ast-github-action@2.0.20
-  with:
+      - name: Checkmarx AST Github Action
+        uses: Checkmarx/ast-github-action@2.0.20
+        with:
     # Provide the AST portal URL
-    base_uri: https://ast.checkmarx.net/
+          base_uri: https://ast.checkmarx.net/
     # Provide the Tenant for AST portal URL
-    cx_tenant: sonype-01
+          cx_tenant: sonype-01
     # Client ID for AST portal authentication
-    cx_client_id: 38e2b1340dba2a78a09
+          cx_client_id: 38e2b1340dba2a78a09
     # Secret key for AST portal authentication
-    cx_client_secret: b34d3fd0950a9efbff9b0f0483ea9eef60aeb8d8
+          cx_client_secret: b34d3fd0950a9efbff9b0f0483ea9eef60aeb8d8
     # Select a Checkmarx Project Name
    
