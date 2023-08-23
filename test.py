@@ -1,1 +1,2 @@
-print(eval('__import__("os").getcwd()'))
+input1=input("Enter your inputs:")
+eval(input1)
