@@ -1,5 +1,5 @@
 name: Checkmarx AST CLI Action
-on:[push]
+on: [push]
 uses: checkmarx/ast-github-action@main #Github Action version
 with:
   base_uri: https://ast.checkmarx.net/
