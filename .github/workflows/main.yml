@@ -15,4 +15,11 @@ jobs:
           cx_tenant: sonype-01
           cx_client_id: ${{secrets.cx_client_id}}
           cx_client_secret: ${{secrets.cx_client_secret}}
+    
+  test:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - run:
+          echo "test job is going on"
    
