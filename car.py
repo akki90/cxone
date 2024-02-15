@@ -31,6 +31,6 @@ class Car:
     def odometer_read(self):
         print(f"The odometer reading for the above car is {str(self.odometer_reading)} miles/hour")
     
-cars=Car("Altroz","XM PLUS",2019)
+cars=Car("Mahindra","XM PLUS",2019)
 print(cars.descriptive_name())
 cars.odometer_read()
