@@ -1,2 +1,2 @@
-my_str='505'
+my_str='mystring'
 eval(my_str)
